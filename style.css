@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+*{box-sizing:border-box;}
+
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: rgb(56, 56, 56);
+}
+
+h1{
+    text-align: left;
+    font-size: 1.75em;
+    color: rgb(187, 196, 231);
+    margin: 5% 0%;
+}
+
+form{
+	width:30%;
+    height: auto;
+	padding:25px;
+	border-radius:10px;
+	background-color:rgb(77, 77, 77);
+    border-style: solid;
+    border-width: 5 px;
+    border-color: rgb(187, 196, 231);
+    border-radius: 5px;
+    margin:35px 40%;
+}
+
+form label{
+	width:100x;
+    font-size: 1em;
+    color: rgb(187, 196, 231);
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+	width:100%;
+	padding:10px 20px;
+	border-radius:3px;
+	background-color:rgb(255,255,255);
+	margin:2px 0;
+	display:inline-block;
+}
+
+button{
+    width: 100%;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(0,0,0.3);
+    box-shadow: 2px 2px 10px rgb(0,0,0.5);
+    color: white;
+    background-color: rgb(105, 75, 236);
+}
+
+.input_error {
+	font-size: 0.7em;
+    color:rgb(241, 94, 94);
+	margin: 2px 0px;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario_grupo-incorrecto {
+	color:#bb2929;
+    border-color: #bb2929;
+    border-width: 10 px;
+    background-image: url(images/error-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}
+
+.formulario_grupo-correcto {
+	color: #1ed12d;
+	border-color:#1ed12d;
+    border-width: 10 px;
+    background-image: url(images/success-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 95%;
+}

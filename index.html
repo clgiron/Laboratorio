@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html htmllang="ES">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Formulario para crear una cuenta de acceso a una página web"/>
+        <title>Formulario para la creación de una cuenta</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="index.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form class="formulario" id="formulario" onsubmit="return validacion()">
+            <h1>Create Account</h1>
+                <!--Nombre-->
+                <div class="formulario_grupo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" onchange="checkNombre(this.value)" >
+                    <p id="nombre_mensaje" class="input_error" style="visibility: hidden;">Rellene este campo</p>
+                    <br>
+                    <label id="nombre_error" class="input_error" style="visibility: hidden;">Nombre inválido, no se admiten caracteres numéricos</label>
+                    <br>
+                </div>
+        
+                <!--Email-->
+                <div class="formulario_grupo">
+                    <label for="email">Email</label>
+                    <input type="email" class="formulario_input" name="email" id="email" onchange="checkEmail(this.value)" >
+                    <p id="email_mensaje" class="input_error" style="visibility: hidden;">Rellene este campo</p>
+                    <br>
+                    <label id="email_error" class="input_error" style="visibility: hidden;">Email inválido</label>
+                    <br>
+                </div>
+
+                <!--Clave-->
+                <div class="formulario_grupo">
+                    <label for="clave">Clave</label>
+                    <input type="password" class="formulario_input" name="clave" id="clave" onchange="checkClave(this.value)" >
+                    <p id="clave_mensaje" class="input_error" style="visibility: hidden;">Rellene este campo</p>
+                    <br>
+                    <label id="clave_error" class="input_error" style="visibility: hidden;">No debe tener más de 8 caracteres</label>
+                    <br>
+                </div>
+
+                <!--Clave 2-->
+                <div class="formulario_grupo">
+                    <label for="clave2">Confirme su clave</label>
+                    <input type="password" class="formulario_input" name="clave2" id="clave2" onchange="checkClave2(this.value)" >
+                    <p id="clave2_mensaje" class="input_error" style="visibility: hidden;">Rellene este campo</p>
+                    <br>
+                    <label  id="clave2_error" class="input_error" style="visibility: hidden;">Las contraseñas no coinciden</label>
+                    <br>
+                </div>
+                
+                
+            <button type="submit">ENVIAR</button>
+                
+        </form>
+    </body>
+</html>
+
+
+
+
